@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Chinese Mode",
+    "description": "A compact Chinese toggle beside the composer opens a language panel with independent reply, reasoning, and tool-narration switches persisted in the profile."
+  }
+}

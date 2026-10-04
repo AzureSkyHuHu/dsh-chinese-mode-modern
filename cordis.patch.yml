@@ -1,0 +1,8 @@
+# dsh-chinese-mode-modern bundle patch
+#
+# name 必须是 profile node_modules 里可解析的完整包名（loader 按真名 import，
+# 写裸名会 ERR_MODULE_NOT_FOUND 并在启动时崩溃）。
+# id 同时是设置命名空间：客户端通过 configForms.get('dsh-chinese-mode-modern') 绑定它。
+- insert:
+    - id: dsh-chinese-mode-modern
+      name: 'dsh-chinese-mode-modern'

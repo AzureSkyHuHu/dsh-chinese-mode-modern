@@ -1,0 +1,61 @@
+{
+  "name": "dsh-chinese-mode-modern",
+  "version": "0.5.0",
+  "type": "module",
+  "description": "DSH 全局中文模式：输入框「中文」按钮展开语言面板，回复、思考、工具说明三项语言独立开关，配置随 profile 持久化。",
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "chinese",
+    "中文",
+    "zh"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AzureSkyHuHu/dsh-chinese-mode-modern.git"
+  },
+  "homepage": "https://github.com/AzureSkyHuHu/dsh-chinese-mode-modern#readme",
+  "bugs": {
+    "url": "https://github.com/AzureSkyHuHu/dsh-chinese-mode-modern/issues"
+  },
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg",
+    "screenshots.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-alpha.1"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/schemastery": ">=3.18.5-alpha.1",
+    "react": ">=18.2.0"
+  }
+}
