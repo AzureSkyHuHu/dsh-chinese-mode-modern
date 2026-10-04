@@ -48,6 +48,7 @@
     "locale",
     "icon.svg",
     "screenshots.json",
+    "docs",
     "README.md",
     "LICENSE"
   ],
